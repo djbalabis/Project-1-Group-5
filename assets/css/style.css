@@ -2,6 +2,11 @@
     box-sizing: border-box
 }
 
+body {
+    /* background-color: rgb(217, 206, 253); */
+    background-color: rgb(182, 208, 253);
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -29,6 +34,7 @@ main {
     border-radius: 8px;
     margin: 10px;
     padding: 20px;
+    background-color: white;
 }
 
 .map-area {
@@ -39,6 +45,7 @@ main {
     border-radius: 8px;
     margin: 10px;
     padding: 20px;
+    background-color: white;
 
 }
 
@@ -50,6 +57,7 @@ main {
     border-radius: 8px;
     margin: 10px;
     padding: 20px;
+    background-color: white;
 }
 
 #search-map {
