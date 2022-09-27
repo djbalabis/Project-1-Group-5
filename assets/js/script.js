@@ -15,8 +15,9 @@ const options = {
       'X-RapidAPI-Host': 'restaurants-near-me-usa.p.rapidapi.com'
     }
   };
+  /*const apikey ="06c0694a15msh45ebf1c15bfb103p1b9c12jsn4b8372b0a32e"*/
   
-  fetch('https://restaurants-near-me-usa.p.rapidapi.com/restaurants/location/state/MI/city/West%20Bloomfield/0', options)
+  fetch('https://restaurants-near-me-usa.p.rapidapi.com/restaurants/location/state/MI/city/West%20Bloomfield/0',options)
     .then(response => response.json())
     .then(response => console.log(response))
     .catch(err => console.error(err));

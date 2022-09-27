@@ -13,18 +13,70 @@
       async
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDt34QR5eMm20xloEMRV0xQ9jmTcDyXT-0&callback=initMap"
     ></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js'>
+    </script>
+ 
     <title>Project 1 - group 5</title>
+   
+
   </head>
 
   <body>
-    <header>
-      <h1>Project 1</h1>
+    <section class="hero is-primary">
+       <div class="hero-body">
+          <h1 class="title">City-Pedia</h1>
+          <h2 class="sub-title">
+            An app that shows the restaurant according to the city searched on it
+          </h2>
+          <a class="navbar-burger">
+            <span aria-hidden="tru e"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+    </section>
+    <main>
+      <div class="column is-full">
+        <div class="column is-half">
+          <form>
+             <input type="search" placeholder="Search...">
+              <button type="submit">Search</button>
+        </form>
+        
+        <div class="auto">
+          <div class="map-responsive">
+
+              <iframe src="xxx" width="200" height="200" frameborder="0" style="border:0"></iframe>
+              <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDt34QR5eMm20xloEMRV0xQ9jmTcDyXT-0&callback=initMap&v=weekly"></script>
+    
+          </div>
+          </div>
+            
+        </div>
+        </div>
+        
+      
+      <div class="column is-full">
+        
+      </div>
+    </main>
+
+      <!-- <div class="column  is-full"></div>
+      <h1>City-Pedia</h1>
+      <h2>An app that shows the Restaurant according to the city searched on it.</h2>
     </header>
     <main>
       <section class="search-area"></section>
+      <div class="columns">
+        <div class="column is-two-fifths">Search Area</div>
+        <div class="search-content"></div>
+        <div class="column">Auto</div>
+      </div>
       <section class="map-area"></section>
       <section class="content-area"></section>
-    </main>
+    </main> -->
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
