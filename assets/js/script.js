@@ -1,10 +1,10 @@
 //Google maps API
 
 function initMap() {
-  const manhattan = { lat: 40.7831, lng: 79.9712 };
+  const manhattan = { lat: 40.7831, lng: -73.9712 };
 
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4,
+    zoom: 10,
     center: manhattan,
   });
 
