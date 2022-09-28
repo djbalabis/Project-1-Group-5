@@ -1,11 +1,16 @@
 //Google maps API
 
-let map;
-
 function initMap() {
-  map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: -34.397, lng: 150.644 },
-    zoom: 8,
+  const manhattan = { lat: 40.7831, lng: 79.9712 };
+
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: manhattan,
+  });
+
+  const marker = new google.maps.Marker({
+    position: manhattan,
+    map: map,
   });
 }
 

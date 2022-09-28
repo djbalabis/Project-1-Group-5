@@ -1,69 +1,81 @@
 * {
-    box-sizing: border-box
+  box-sizing: border-box;
 }
 
 body {
-    /* background-color: rgb(217, 206, 253); */
-    background-color: rgb(182, 208, 253);
+  background-color: rgb(182, 208, 253);
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
 }
 
-header h1 {
-    font-size: 25px;
-    font-weight: bolder;
-}
+/* header h1 {
+  font-size: 25px;
+  font-weight: bolder;
+} */
 
 main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 60px;
+}
+
+.title {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* font-style: oblique; */
+  font-size: 35px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .search-area {
-    display: flex;
-    width: 600px;
-    height: 500px;
-    box-shadow: 5px 5px 20px grey;
-    border-radius: 8px;
-    margin: 10px;
-    padding: 20px;
-    background-color: white;
+  display: flex;
+  width: 600px;
+  height: 500px;
+  box-shadow: 5px 5px 20px grey;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 20px;
+  background-color: white;
 }
 
 .map-area {
-    display: flex;
-    width: 600px;
-    height: 500px;
-    box-shadow: 5px 5px 20px grey;
-    border-radius: 8px;
-    margin: 10px;
-    padding: 20px;
-    background-color: white;
-
+  display: flex;
+  width: 600px;
+  height: 500px;
+  box-shadow: 5px 5px 20px grey;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 20px;
+  background-color: white;
 }
 
 .content-area {
-    display: flex;
-    width: 1220px;
-    height: 550px;
-    box-shadow: 5px 5px 20px grey;
-    border-radius: 8px;
-    margin: 10px;
-    padding: 20px;
-    background-color: white;
+  display: flex;
+  width: 1220px;
+  height: 550px;
+  box-shadow: 5px 5px 20px grey;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 20px;
+  background-color: white;
 }
 
 #search-map {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: -30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: -30px;
+}
 
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
 }
