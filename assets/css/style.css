@@ -69,8 +69,10 @@ button[type="submit"] {
 .search_result{
     display:border-box;
     border: 2px solid black;
-}
-#map{
-    height:100%;
-    width:100%;
-}
+    }
+    #map
+    {
+        position: fixed !important; 
+        height: 100% !important;
+        width: 100% !important;
+    }

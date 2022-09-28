@@ -50,11 +50,25 @@ function initMap() {
 
 
   let map =new google.maps.Map(document.getElementById('map'),options);
+  
+  /*var marker = new google.maps.Marker({
+    position:{lat: 40.5187, lng: 74.4121},
+    map:map,
+    icon:"https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet.svg",
+  });*/
+  addMarker({lat: 40.5187, lng: 74.4121});
+  function addMarker(coords){
+    var marker = new google.maps.Marker({
+      position:{lat: 40.5187, lng: 74.4121},
+      map:map,
+      icon:"https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet.svg"
+  });
 
 }
+
 window.initMap = initMap;
 
-// JavaScript Document
+/* // JavaScript Document
 /*var queryURL =
   "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=nyc&category=restaurants";
 var apiKey = "my key";
