@@ -1,16 +1,7 @@
 //Google maps API
 
-/*})
-.then(function(data){
-    console.log(data);
-});*/
-/*const options = {
-    method: 'GET',
-    headers: {
-      'X-RapidAPI-Key': '06c0694a15msh45ebf1c15bfb103p1b9c12jsn4b8372b0a32e',
-      'X-RapidAPI-Host': 'restaurants-near-me-usa.p.rapidapi.com'
-    }
-  };
+
+
   /*const apikey ="06c0694a15msh45ebf1c15bfb103p1b9c12jsn4b8372b0a32e"*/
   
   /*fetch('https://restaurants-near-me-usa.p.rapidapi.com/restaurants/location/state/MI/city/West%20Bloomfield/0',options)
@@ -67,18 +58,7 @@ function initMap() {
 
 }
 }
-function GetLatLong(){
-  var geoCoder = new google.maps.GeoCoder();
 
-  geoCoder.geoCode({
-    'address' :address
-  }, function(results,status){
-    if(status==google.maps.GeoCoderStatus.OK){
-      var latitude = results[0].geometry.location.lat();
-      var longitude = results[0].geometry.location.lng();
-    }
-  });
-}
 // var searchBox=document.querySelector(".search");
 // google.maps.event.addListener(searchBox)
 window.initMap = initMap;
