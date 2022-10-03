@@ -20,7 +20,7 @@ The people responsible for the production of this website and its surrounding ma
 ![DJ](https://github.com/djbalabis)
 ![Yorlan](https://github.com/Yorlan-r)
 ![Nipa](https://github.com/nipaanand)
-![John](https://github.com/nipaanand)
+![John](https://github.com/jwill5432)
 Stephanie
 
 ## Features
