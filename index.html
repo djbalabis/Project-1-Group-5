@@ -9,76 +9,46 @@
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Project 1 - group 5</title>
-   
-
+    <title>Restaurants "R" Us</title>
   </head>
 
   <body>
-    <section class="hero is-primary">
-       <div class="hero-body">
-          <h1 class="title">City-Pedia</h1>
-          <h2 class="sub-title">
-            An app that shows the restaurant according to the city searched on it
-          </h2>
-          <a class="navbar-burger">
-            <span aria-hidden="tru e"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-    </section>
-    <main>
-      <div class="column is-full">
-        <div class="column is-half">
-          <form>
-             <input type="search" placeholder="Search...">
-              <button type="submit">Search</button>
-        </form>
-        </div>
-
-
-        
-          <div id="map">
-
-        </div>
-          </div>
-            
-        </div>
-        </div>
-        
-      
-      <div class="column is-full">
-        <section class="search-result">
-
-        </section>
-      </div>
-    </main>
-
-      <!-- <div class="column  is-full"></div>
-      <h1>City-Pedia</h1>
-      <h2>An app that shows the Restaurant according to the city searched on it.</h2>
     <header>
-      <h1 class="title">Project 1</h1>
+      <h1 class="title">Restaurants "R" Us</h1>
     </header>
     <main>
-      <section class="search-area"></section>
-      <div class="columns">
-        <div class="column is-two-fifths">Search Area</div>
-        <div class="search-content"></div>
-        <div class="column">Auto</div>
-      </div>
-      <section class="map-area"></section>
-      <section class="content-area"></section>
-<<<<<<< HEAD
-    </main> -->
+      <div id="search-map">
+        <section class="search-area">
+          <input
+            class="input is-primary" id="search-text"
+            type="text"
+            placeholder="Location"
+          />
+          <button class="button is-primary">Search</button>
+        </section>
 
+        <div id="map-area">
+          <iframe src="https://www.google.com/maps/embed"
+            width="600"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"></iframe>
+      </div>
+      
+      <section class="content-area" id ="search-result">
+        <div id="search-request"></div>
+
+          </section>
+      </div>
+          
     </main>
 
-    <script
-      async 
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEPgNKxFr2HdeaPdLUbu4bgm_O3CMluyI&region=US&callback=initMap"
-    ></script>
+    
+    <script 
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEPgNKxFr2HdeaPdLUbu4bgm_O3CMluyI"></script>
+    
+
 
     <script 
       src="https://code.jquery.com/jquery-3.6.1.min.js"
