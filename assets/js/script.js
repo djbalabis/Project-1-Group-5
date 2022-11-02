@@ -1,36 +1,73 @@
-//Google maps API
+const searchBtn = document
+  .querySelector(".button")
+  .addEventListener("click", whenClicked);
+const searchInput = document.querySelector(".input").value;
+const searches = document.querySelector("#searches");
+const searchForm = document.querySelector("#search-form");
 
-function initMap() {
-  const manhattan = { lat: 40.7831, lng: -73.9712 };
-
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 10,
-    center: manhattan,
-  });
-
-  const marker = new google.maps.Marker({
-    position: manhattan,
-    map: map,
-  });
-}
-
-window.initMap = initMap;
-
-// JavaScript Document
-var queryURL =
-  "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=nyc&category=restaurants";
-var apiKey = "my key";
-
-$.ajax({
-  url: queryURL,
+const options = {
   method: "GET",
   headers: {
-    accept: "application/json",
-    "x-requested-with": "xmlhttprequest",
-    "Access-Control-Allow-Origin": "*",
-    Authorization: `Bearer PbQtfRepnnfwMICkBmdOxrwD1Id049g3Ju4f1zyvrQQ3ZcG75zdXp3zfqU8cAIM6G_ZpusIpcYQNKphu8lxcYPU_sjA6FmYC20Xqg7BSpsHotMAC3BbIINvmV0oyY3Yx`,
+    "X-RapidAPI-Key": "71fd271e6dmsh37048dacb17d521p168974jsn3d5264e97b52",
+    "X-RapidAPI-Host": "edamam-recipe-search.p.rapidapi.com",
   },
-  success: function (result) {
-    console.log(result);
-  },
-});
+};
+
+function getSearchResults() {
+  const searchInputValue = document.querySelector(".input").value;
+  fetch(
+    `https://edamam-recipe-search.p.rapidapi.com/search?q=${searchInputValue}`,
+    options
+  )
+    .then((response) => response.json())
+    .then((response) => {
+      response.hits.forEach(({ recipe }) => {
+        // var ul = document.getElementById("results");
+        var items = document.getElementById("item");
+        // var li = document.createElement("li");
+        var para = document.createElement("p");
+        var link = document.createElement("a");
+        // var images = document.createElement("img");
+        link.setAttribute("href", (recipe.url));
+        link.setAttribute("target", "_blank");
+        // images.setAttribute("src", (recipe.imgage));
+        para.appendChild(document.createTextNode(recipe.label));
+        link.appendChild(document.createTextNode(recipe.url));
+        // images.appendChild(document.createTextNode(recipe.image));
+        // li.appendChild(document.createTextNode(recipe.label));
+        // li.appendChild(document.createTextNode(recipe.source));
+        // li.appendChild(document.createTextNode(recipe.url));
+        // ul.appendChild(li);Node
+        items.appendChild(para);Node
+        items.appendChild(link);Node
+        // items.appendChild(images);Node
+      });
+    })
+    // .then(response => console.log(response))
+    .catch((err) => console.error(err));
+}
+function whenClicked() {
+  // const resultsLi = document.createElement("li");
+  // resultsLi.innerHTML = getSearchResults();
+  getSearchResults();
+  // searchResults.appendChild(resultsLi);
+}
+
+// let searchStorage = localStorage.getItem("searches")
+//   ? JSON.parse(localStorage.getItem("searches"))
+//   : [];
+
+// searchForm.addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   searchStorage.push(searchInputValue);
+//   localStorage.setItem("searches", searchInputValue);
+//   // localStorage.setItem("searches", JSON.stringify(searchStorage));
+//   listBuilder(searchInputValue.value);
+//   searchInputValue.value = "";
+// });
+
+// const listBuilder = (text) => {
+//   const search = document.createElement("li");
+//   search.innerHTML = text + ' <button onclick="deleteSearch(this)">x</button>';
+//   searches.appendChild(search);
+// };
