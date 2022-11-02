@@ -4,6 +4,9 @@
 
 body {
   background-color: rgb(182, 208, 253);
+  background-image: url(../images/ingredients3.jpeg);
+  background-size: cover;
+  background-position: center;
 }
 
 header {
@@ -13,9 +16,9 @@ header {
 }
 
 /* header h1 {
-  font-size: 25px;
-  font-weight: bolder;
-} */
+    font-size: 25px;
+    font-weight: bolder;
+  } */
 
 main {
   display: flex;
@@ -25,8 +28,16 @@ main {
   padding: 60px;
 }
 
+a {
+  color: rgb(19, 211, 172);
+}
+
+a:hover {
+  color: rgb(255, 157, 20);
+}
+
 .title {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   /* font-style: oblique; */
   font-size: 35px;
   color: white;
@@ -64,6 +75,12 @@ main {
   margin: 10px;
   padding: 20px;
   background-color: white;
+}
+
+.content-area p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-weight: bolder;
 }
 
 #search-map {

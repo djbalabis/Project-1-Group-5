@@ -10,34 +10,39 @@
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <title>Restaurants "R" Us</title>
+    <title>Recipes "R" Us</title>
   </head>
 
-  <body>
+  <body id="body">
     <header>
-      <h1 class="title">Restaurants "R" Us</h1>
+      <h1 class="title">Recipes "R" Us</h1>
     </header>
     <main>
       <div id="search-map">
         <section class="search-area">
-          <input
-            class="input is-primary"
-            type="text"
-            placeholder="Location"
-          />
-          <button class="button is-primary">Search</button>
+          <form id="search-form"></form>
+            <input
+              class="input is-primary"
+              type="text"
+              placeholder="Food or Diet type . . ."
+            />
+            <button class="button is-primary">Search</button>
+        </form>
+          <ul id="searches"></ul>
         </section>
         <section class="map-area">
           <div id="map"></div>
         </section>
       </div>
-      <section class="content-area"></section>
+      <section class="content-area">
+        <div id="item"></div>
+      </section>
     </main>
 
-    <script
+    <!-- <script
       async
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDt34QR5eMm20xloEMRV0xQ9jmTcDyXT-0&callback=initMap"
-    ></script>
+    ></script> -->
 
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
