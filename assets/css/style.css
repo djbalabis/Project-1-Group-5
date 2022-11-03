@@ -15,11 +15,6 @@ header {
   padding-top: 30px;
 }
 
-/* header h1 {
-    font-size: 25px;
-    font-weight: bolder;
-  } */
-
 main {
   display: flex;
   flex-direction: row;
@@ -38,10 +33,13 @@ a:hover {
 
 .title {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  /* font-style: oblique; */
   font-size: 35px;
   color: white;
   text-shadow: 2px 2px 4px #000000;
+}
+
+.title:hover {
+  color: rgb(182, 208, 253);
 }
 
 .search-area {
@@ -64,6 +62,51 @@ a:hover {
   margin: 10px;
   padding: 20px;
   background-color: white;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+.map-area h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  font-style: italic;
+  text-shadow: 2px 2px 4px rgb(19, 211, 172);
+}
+
+.map-area h2:hover {
+  text-shadow: 2px 2px 4px rgb(255, 157, 20);
+}
+
+.map-area .joke {
+  width: 100%;
+  height: 360px;
+  margin-top: 70px;
+  border-radius: 8px;
+}
+
+.map-area p {
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 25px;
+  margin: 20px;
+  text-shadow: 1px 1px 2px rgb(182, 208, 253);
+}
+
+.map-area p:hover {
+  text-shadow: 1px 1px 2px rgb(19, 211, 172);
+}
+
+#joke-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#dad-joke {
+  width: 100%;
 }
 
 .content-area {
@@ -81,6 +124,7 @@ a:hover {
   font-family: Arial, Helvetica, sans-serif;
   font-size: large;
   font-weight: bolder;
+  text-shadow: 1px 1px 2px rgb(182, 208, 253);
 }
 
 #search-map {
@@ -88,11 +132,4 @@ a:hover {
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: -30px;
-}
-
-#map {
-  height: 400px;
-  /* The height is 400 pixels */
-  width: 100%;
-  /* The width is the width of the web page */
 }
